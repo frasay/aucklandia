@@ -1,0 +1,106 @@
+baseurl = "https://aucklandia.com"
+title = "Aucklandia"
+theme = "hugo-theme-cleanwhite"
+languageCode = "en-nz"
+preserveTaxonomyNames = true
+
+[services]
+  [services.disqus]
+    shortname = ""
+  [services.googleAnalytics]
+    id = ""
+
+[pagination]
+  pagerSize = 5
+
+[outputs]
+home = ["HTML", "RSS", "Algolia"]
+
+[params]
+  header_image = "img/home-bg.jpg"
+  SEOTitle = "Aucklandia | Guy Fraser's Blog"
+  description = "Ideas, tech musings, video work, and creative output from Guy Fraser"
+  keyword = "Guy Fraser, Aucklandia, blog, tech, video, creative, Auckland"
+  slogan = "Ideas, tech musings, and creative work"
+  upstreamAttribution = false
+
+  image_404 = "img/404-bg.jpg"
+  title_404 = "Page not found :("
+  omit_categories = false
+
+  page_view_counter = false
+  leancloud_app_id = ""
+  leancloud_app_key = ""
+
+  # algolia site search
+  algolia_search = false
+  algolia_appId = ""
+  algolia_indexName = ""
+  algolia_apiKey = ""
+
+  # Sidebar settings
+  sidebar_about_description = "Digital projects manager, video creator, and tech enthusiast based in Auckland"
+  sidebar_avatar = "img/avatar.jpg"
+
+  featured_tags = true 
+  featured_condition_size = 1 
+
+  # Baidu Analytics
+  ba_track_id = ""
+  
+  disqus_proxy = ""
+  disqus_site = ""
+
+  # Twikoo comments
+  twikoo_env_id = ""
+
+  # Artalk comments
+  artalk_enable = false
+  artalk_server = ""
+  artalk_site = ""
+
+  reward = false
+  friends = false
+  bookmarks = false
+  about_me = true
+
+  last_posts = true
+
+  [params.social]
+  rss = true 
+  email = "your.email@example.com"
+  github = "https://github.com/yourgithub"
+  linkedin = "https://www.linkedin.com/in/yourlinkedinid"
+
+  [[params.additional_menus]]
+  title = "ARCHIVE"
+  href = "/archive/"
+  [[params.additional_menus]]
+  title = "ABOUT"
+  href = "/about/"
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+params = ["categories", "tags"] 
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 2
+    startLevel = 1
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]

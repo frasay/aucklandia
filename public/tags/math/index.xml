@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Math on Aucklandia</title>
+    <link>http://localhost:1313/tags/math/</link>
+    <description>Recent content in Math on Aucklandia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-nz</language>
+    <lastBuildDate>Sun, 06 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Authoring mathematical formulae</title>
+      <link>http://localhost:1313/2025/07/06/mathematical-formulae/</link>
+      <pubDate>Sun, 06 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/07/06/mathematical-formulae/</guid>
+      <description>Authoring mathematical and chemical equations Cleanwhite theme now has built-in \(\KaTeX\) support, so that you can easily include complex mathematical formulae into your web page, either inline or centred on its own line. The theme uses Hugo&amp;rsquo;s embedded instance of the KaTeX display engine to render mathematical markup to HTML at build time. With this server side rendering of formulae, the same output is produced, regardless of your browser or your environment.</description>
+    </item>
+  </channel>
+</rss>

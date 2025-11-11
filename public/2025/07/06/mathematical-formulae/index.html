@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en-nz">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Aucklandia">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="http://localhost:1313//img/home-bg.jpg">
+    <meta property="twitter:image" content="http://localhost:1313//img/home-bg.jpg" />
+    
+
+    
+    <meta name="title" content="Authoring mathematical formulae" />
+    <meta property="og:title" content="Authoring mathematical formulae" />
+    <meta property="twitter:title" content="Authoring mathematical formulae" />
+    
+
+    
+    <meta name="description" content="Cleanwhite theme now has built-in support for authoring mathematical or chemical equations">
+    <meta property="og:description" content="Cleanwhite theme now has built-in support for authoring mathematical or chemical equations" />
+    <meta property="twitter:description" content="Cleanwhite theme now has built-in support for authoring mathematical or chemical equations" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="Guy Fraser, Aucklandia, blog, tech, video, creative, Auckland">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Authoring mathematical formulae-Aucklandia | Guy Fraser&#39;s Blog</title>
+
+    <link rel="canonical" href="/2025/07/06/mathematical-formulae/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+    
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+    
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+</head>
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Aucklandia</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/life">life</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/tech">tech</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/tips">tips</a>
+                    </li>
+                    
+                    
+		    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/2018-05-23-service_2_service_auth/background.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/math" title="Math">
+                            Math
+                        </a>
+                        
+                        <a class="tag" href="/tags/katex" title="KaTeX">
+                            KaTeX
+                        </a>
+                        
+                    </div>
+                    <h1>Authoring mathematical formulae</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                            Andreas Deininger
+                         
+                        on 
+                        Sunday, July 6, 2025
+                        
+                        
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#authoring-mathematical-and-chemical-equations">Authoring mathematical and chemical equations</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                
+                <h2 id="authoring-mathematical-and-chemical-equations">Authoring mathematical and chemical equations</h2>
+<p>Cleanwhite theme now has built-in \(\KaTeX\) support, so that you can easily include
+complex mathematical formulae into your web page, either inline or centred
+on its own line. The theme uses Hugo&rsquo;s embedded instance of the KaTeX
+display engine to render mathematical markup to HTML at build time.
+With this server side rendering of formulae, the same output is produced,
+regardless of your browser or your environment.</p>
+<p><a href="https://www.latex-project.org/">\(\LaTeX\)</a> is a high-quality typesetting
+system for the production of technical and scientific documentation. Due to its
+excellent math typesetting capabilities, \(\TeX\) became the de facto standard
+for the communication and publication of scientific documents, especially if
+these documents contain a lot of mathematical formulae. Designed and mostly
+written by Donald Knuth, the initial version was released in 1978. Dating back
+that far, \(\LaTeX\) has <code>pdf</code> as its primary output target and is not
+particularly well suited for producing HTML output for the Web. Fortunately,
+with <a href="https://katex.org/">\(\KaTeX\)</a> there exists a fast and easy-to-use
+JavaScript library for \(\TeX\) math rendering on the web, which is embedded
+into Hugo as of Hugo version v0.132.0.</p>
+<p>As already mentioned above, mathematical or chemical equations can be shown either inline or in display mode:</p>
+<h3 id="inline-formulae">Inline formulae</h3>
+<p>The following code sample produces a text line with three inline formulae:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>When <span style="color:#f1fa8c">\(</span><span style="color:#8be9fd;font-style:italic">a </span><span style="color:#8be9fd;font-style:italic">\ne</span><span style="color:#8be9fd;font-style:italic"> </span><span style="color:#bd93f9">0</span><span style="color:#f1fa8c">\)</span>, there are two solutions to <span style="color:#f1fa8c">\(</span><span style="color:#8be9fd;font-style:italic">ax^</span><span style="color:#bd93f9">2</span><span style="color:#8be9fd;font-style:italic"> </span><span style="color:#ff79c6">+</span><span style="color:#8be9fd;font-style:italic"> bx </span><span style="color:#ff79c6">+</span><span style="color:#8be9fd;font-style:italic"> c</span><span style="color:#ff79c6">=</span><span style="color:#8be9fd;font-style:italic"> </span><span style="color:#bd93f9">0</span><span style="color:#f1fa8c">\)</span> and they are <span style="color:#f1fa8c">\(</span><span style="color:#8be9fd;font-style:italic">x </span><span style="color:#ff79c6">=</span><span style="color:#8be9fd;font-style:italic"> {</span><span style="color:#ff79c6">-</span><span style="color:#8be9fd;font-style:italic">b </span><span style="color:#8be9fd;font-style:italic">\pm</span><span style="color:#8be9fd;font-style:italic"> </span><span style="color:#8be9fd;font-style:italic">\sqrt</span><span style="color:#8be9fd;font-style:italic">{b^</span><span style="color:#bd93f9">2</span><span style="color:#ff79c6">-</span><span style="color:#bd93f9">4</span><span style="color:#8be9fd;font-style:italic">ac} </span><span style="color:#8be9fd;font-style:italic">\over</span><span style="color:#8be9fd;font-style:italic"> </span><span style="color:#bd93f9">2</span><span style="color:#8be9fd;font-style:italic">a}</span><span style="color:#f1fa8c">\)</span>.
+</span></span></code></pre></div><p>When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c= 0\) and they are
+\(x = {-b \pm \sqrt{b^2-4ac} \over 2a}\).</p>
+<h3 id="formulae-in-display-mode">Formulae in display mode</h3>
+<p>The following code sample produces an introductory text line followed by a
+formula numbered as <code>(1)</code> residing on its own line:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>The probability of getting \(k\) heads when flipping \(n\) coins is:
+</span></span><span style="display:flex;"><span>\[
+</span></span><span style="display:flex;"><span>\tag*{(1)} P(E) = {n \choose k} p^k (1-p)^{n-k}
+</span></span><span style="display:flex;"><span>\]
+</span></span></code></pre></div><p>As an alternative to the standard syntax used above, formulae can also be
+authored using a <a href="https://docs.gitlab.com/ee/user/markdown.html#math">GLFM math block</a>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>The probability of getting \(k\) heads when flipping \(n\) coins is:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f1fa8c">```math
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c"></span>\tag*{(1)} P(E) = {n \choose k} p^k (1-p)^{n-k}
+</span></span><span style="display:flex;"><span><span style="color:#f1fa8c">```</span>
+</span></span></code></pre></div><p>Both standard syntax and <code>math</code> block render to the same formula:</p>
+<p>The probability of getting \(k\) heads when flipping \(n\) coins is:</p>
+<pre tabindex="0"><code class="language-math" data-lang="math">\tag*{(1)}  P(E) = {n \choose k} p^k (1-p)^{n-k}
+</code></pre><p>This <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">wiki page</a> provides in-depth
+information about typesetting mathematical formulae using the \(\LaTeX\)
+typesetting system.</p>
+<h3 id="activating-katex-support">Activating KaTeX support</h3>
+<h4 id="enable-passthrough-extension">Enable <code>passthrough</code> extension</h4>
+<p>All you have to do is to enable and configure the goldmark <code>passthrough</code> extension
+inside your <code>hugo.toml</code>/<code>hugo.yaml</code>/<code>hugo.json</code>. You may want to edit the definition of the delimiters to
+meet your own needs. For details, see the official
+<a href="https://gohugo.io/content-management/mathematics/#step-1">Hugo docs</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[markup]
+</span></span><span style="display:flex;"><span>  [markup.goldmark]
+</span></span><span style="display:flex;"><span>    [markup.goldmark.extensions]
+</span></span><span style="display:flex;"><span>      [markup.goldmark.extensions.passthrough]
+</span></span><span style="display:flex;"><span>        enable = <span style="color:#ff79c6">true</span>
+</span></span><span style="display:flex;"><span>        [markup.goldmark.extensions.passthrough.delimiters]
+</span></span><span style="display:flex;"><span>          block = [[<span style="color:#f1fa8c">&#39;\[&#39;</span>, <span style="color:#f1fa8c">&#39;\]&#39;</span>], [<span style="color:#f1fa8c">&#39;$$&#39;</span>, <span style="color:#f1fa8c">&#39;$$&#39;</span>]]
+</span></span><span style="display:flex;"><span>          inline = [[<span style="color:#f1fa8c">&#39;\(&#39;</span>, <span style="color:#f1fa8c">&#39;\)&#39;</span>]]
+</span></span></code></pre></div><p>Internally, cleanwhite theme creates and uses Hugo&rsquo;s <code>render-passthrough</code>
+<a href="https://gohugo.io/render-hooks/passthrough/">hook</a> when generating math
+equations at build-time. This hook is part of the theme, no need for any user action.</p>
+<h4 id="media-types-for-download-of-katex-fonts">Media types for download of KaTeX fonts</h4>
+<p>Just for your information, no need for any action from you as user:
+KaTeX brings its own font files for rendering mathematical formulae.
+In order to enable the download of these font files locally during build time, two
+additional <a href="https://gohugo.io/configuration/media-types/#create-a-media-type">media types</a>
+had to be created by adding the lines below to the <code>hugo.toml</code> configuration file of the cleanwhite theme:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>mediaTypes:
+</span></span><span style="display:flex;"><span>  font/woff:
+</span></span><span style="display:flex;"><span>    suffixes:
+</span></span><span style="display:flex;"><span>    - woff
+</span></span><span style="display:flex;"><span>  font/woff2:
+</span></span><span style="display:flex;"><span>    suffixes:
+</span></span><span style="display:flex;"><span>    - woff2
+</span></span></code></pre></div><p>With the <code>passthrough</code> extension enabled and the media types defined, support
+of \(\KaTeX\) is automatically enabled when you author a <code>math</code> code block on
+your page or when you add a mathematical formula to your page using one of the
+passthrough delimiter pairs defined above.</p>
+<h3 id="display-of-chemical-equations-and-physical-units">Display of Chemical Equations and Physical Units</h3>
+<p><a href="https://www.ctan.org/pkg/mhchem">mhchem</a> is a \(\LaTeX\) package for
+typesetting chemical molecular formulae and equations. Fortunately, \(\KaTeX\)
+provides the <code>mhchem</code>
+<a href="https://github.com/KaTeX/KaTeX/tree/main/contrib/mhchem">extension</a> that makes
+the <code>mhchem</code> package accessible when authoring content for the web. As of hugo
+version v0.144.0, the <code>mhchem</code> extension is enabled in Hugo&rsquo;s embedded KaTeX
+instance by default, therefore you can easily include chemical equations into
+your page. An equation can be shown either inline or can reside on its own line.
+The following code sample produces a text line including an inline chemical
+equation:</p>
+<pre tabindex="0"><code class="language-mhchem" data-lang="mhchem">*Precipitation of barium sulfate:* \(\ce{SO4^2- + Ba^2+ -&gt; BaSO4 v}\)
+</code></pre><p><em>Precipitation of barium sulfate:</em> \(\ce{SO4^2- + Ba^2+ -> BaSO4 v}\)</p>
+<p>More complex equations can be displayed on their own line using the block
+delimiters defined:</p>
+<!-- prettier-ignore-start -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>\[
+</span></span><span style="display:flex;"><span>\tag*{(2)} \ce{Zn^2+  &lt;=&gt;[+ 2OH-][+ 2H+]  $\underset{\text{amphoteric hydroxide}}{\ce{Zn(OH)2 v}}$  &lt;=&gt;[+ 2OH-][+ 2H+]  $\underset{\text{tetrahydroxozincate}}{\ce{[Zn(OH)4]^2-}}$}
+</span></span><span style="display:flex;"><span>\]
+</span></span></code></pre></div><!-- prettier-ignore-end -->
+<p>Alternatively, you can use a code block adorned with <code>chem</code> in order to render
+the equation:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#f1fa8c">```chem
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c"></span>\tag*{(2)} \ce{Zn^2+  &lt;=&gt;[+ 2OH-][+ 2H+]  $\underset{\text{amphoteric hydroxide}}{\ce{Zn(OH)2 v}}$  &lt;=&gt;[+ 2OH-][+ 2H+]  $\underset{\text{tetrahydroxozincate}}{\ce{[Zn(OH)4]^2-}}$}
+</span></span><span style="display:flex;"><span><span style="color:#f1fa8c">```</span>
+</span></span></code></pre></div><p>Both standard syntax and <code>chem</code> block renders to the same equation:</p>
+<!-- prettier-ignore-start -->
+\[
+\tag*{(2)} \ce{Zn^2+  <=>[+ 2OH-][+ 2H+]  $\underset{\text{amphoteric hydroxide}}{\ce{Zn(OH)2 v}}$  <=>[+ 2OH-][+ 2H+]  $\underset{\text{tetrahydroxozincate}}{\ce{[Zn(OH)4]^2-}}$}
+\]
+<!-- prettier-ignore-end -->
+<p>The <a href="https://mhchem.github.io/MathJax-mhchem/">manual</a> for mchem’s input syntax
+provides in-depth information about typesetting chemical formulae and physical
+units using the <code>mhchem</code> tool.</p>
+<p>Use of <code>mhchem</code> is not limited to the authoring of chemical equations. By using
+the included <code>\pu</code> command, pretty looking physical units can be written with
+ease, too. The following code sample produces two text lines with four numbers
+plus their corresponding physical units:</p>
+<pre tabindex="0"><code class="language-mhchem" data-lang="mhchem">* Scientific number notation: \(\pu{1.2e3 kJ}\) or \(\pu{1.2E3 kJ}\) \\
+* Divisions: \(\pu{123 kJ/mol}\) or \(\pu{123 kJ//mol}\)
+</code></pre><ul>
+<li>Scientific number notation: \(\pu{1.2e3 kJ}\) or \(\pu{1.2E3 kJ}\)</li>
+<li>Divisions: \(\pu{123 kJ/mol}\) or \(\pu{123 kJ//mol}\)</li>
+</ul>
+<p>For a complete list of options when authoring physical units, have a look at the
+<a href="https://mhchem.github.io/MathJax-mhchem/#pu">section</a> on physical units in the
+<code>mhchem</code> documentation.</p>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/readme/" data-toggle="tooltip" data-placement="top" title="Clean White Theme for Hugo">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/docker" title="docker">
+                            docker
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/istio" title="istio">
+                            istio
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/kubernetes" title="kubernetes">
+                            kubernetes
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/microservice" title="microservice">
+                            microservice
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/security" title="security">
+                            security
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/service-mesh" title="service mesh">
+                            service mesh
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tips" title="tips">
+                            tips
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Aucklandia" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    <li>
+                        <a href="mailto:your.email@example.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/yourgithub">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Aucklandia 2025
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
